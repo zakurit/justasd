@@ -1,20 +1,87 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Your Name</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Hello, I’m Your Name</h1>
-    <p>Welcome to my portfolio website.</p>
-  </header>
-  <main>
-    <section>
-      <h2>Projects</h2>
-      <p>This is where I’ll showcase my work.</p>
-    </section>
-  </main>
+  <div class="lang-switch">
+    <button onclick="switchLanguage()">
+      <span id="lang-btn">LT</span>
+    </button>
+  </div>
+
+  <div class="container">
+    <header>
+      <h1 data-en="Justas Daukšas" data-lt="Justas Daukšas">Justas Daukšas</h1>
+      <p data-en="Welcome to my portfolio website." data-lt="Sveiki atvykę į mano portfolio svetainę.">Welcome to my portfolio website.</p>
+    </header>
+
+    <main>
+      <section>
+        <h2 data-en="Projects" data-lt="Projektai">Projects</h2>
+        <p data-en="My work." data-lt="Mano darbai.">My work.</p>
+      </section>
+
+      <!-- Scrollable galleries -->
+      <div class="gallery-container">
+        <h3 data-en="3D" data-lt="3D">Gallery 1</h3>
+        <div class="gallery" id="gallery1">
+		  <img src="images/Asset 2.png" alt="Image 1" title=""CMYK"">
+		  <img src="images/Asset 3.png" alt="Image 2" title=""CMYK"">
+		  <img src="images/Asset 4.png" alt="Image 3" title=""CMYK"">
+		  <img src="images/Asset 5.png" alt="Image 4" title=""CMYK"">
+		  <img src="images/Asset 6.png" alt="Image 5" title=""CMYK"">
+		  <img src="images/Asset 7.png" alt="Image 6" title=""CMYK"">
+		  <img src="images/Asset 8.png" alt="Image 7" title=""CMYK"">
+		  
+
+        </div>
+
+        <h3 data-en="Graphic" data-lt="Grafika">Gallery 2</h3>
+        <div class="gallery" id="gallery2">
+          <img src="https://via.placeholder.com/200" alt="Image A" title="Tooltip A">
+          <img src="https://via.placeholder.com/200" alt="Image B" title="Tooltip B">
+          <img src="https://via.placeholder.com/200" alt="Image C" title="Tooltip C">
+        </div>
+
+        <h3 data-en="Gallery 3" data-lt="Galerija 3">Gallery 3</h3>
+        <div class="gallery" id="gallery3">
+          <img src="https://via.placeholder.com/200" alt="Image X" title="Tooltip X">
+          <img src="https://via.placeholder.com/200" alt="Image Y" title="Tooltip Y">
+          <img src="https://via.placeholder.com/200" alt="Image Z" title="Tooltip Z">
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    // Language switching
+    let currentLang = 'en';
+    function switchLanguage() {
+      currentLang = currentLang === 'en' ? 'lt' : 'en';
+      document.querySelectorAll('[data-en]').forEach(el => {
+        el.textContent = el.dataset[currentLang];
+      });
+      document.getElementById('lang-btn').textContent = currentLang === 'en' ? 'LT' : 'EN';
+    }
+
+    // Blur effect on scroll
+    document.querySelectorAll('.gallery').forEach(gallery => {
+      let lastScrollLeft = 0;
+      gallery.addEventListener('scroll', () => {
+        const scrollLeft = gallery.scrollLeft;
+        const delta = Math.abs(scrollLeft - lastScrollLeft);
+        const blurAmount = Math.min(delta / 10, 10);
+        gallery.style.filter = `blur(${blurAmount}px)`;
+        clearTimeout(gallery._blurTimeout);
+        gallery._blurTimeout = setTimeout(() => {
+          gallery.style.filter = 'blur(0px)';
+        }, 150);
+        lastScrollLeft = scrollLeft;
+      });
+    });
+  </script>
 </body>
 </html>

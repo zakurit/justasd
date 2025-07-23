@@ -1,17 +1,100 @@
+/* Base styles */
+@font-face {
+  font-family: 'Coolvetica';
+  src: url('fonts/Coolvetica Rg.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Coolvetica Italic';
+  src: url('fonts/Coolvetica Rg It.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Coolvetica Hv';
+  src: url('fonts/Coolvetica Hv Comp.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Coolvetica Cond';
+  src: url('fonts/Coolvetica Rg Cond.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Coolvetica Cram';
+  src: url('fonts/Coolvetica Rg Cram.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Coolvetica';
   margin: 0;
+  background-color: #1B1717;
+  color: #EEEBDD;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
   padding: 2em;
-  background-color: #f5f5f5;
 }
 
 header {
-  background-color: #333;
-  color: white;
+  font-family: 'Coolvetica Italic', sans-serif;
+  background-color: #810000;
+  color: #EEEBDD;
   padding: 2em;
-  text-align: center;
+  border-radius: 1em;
+  text-align: left;
 }
 
 main {
   margin-top: 2em;
+}
+
+.lang-switch {
+  position: fixed;
+  top: 1em;
+  right: 1em;
+  z-index: 10;
+}
+
+.lang-switch button {
+  padding: 0.5em 1em;
+  background: #CE1212;
+  border: none;
+  border-radius: 0.5em;
+  cursor: pointer;
+  color: #EEEBDD;
+}
+
+.gallery-container {
+  margin-top: 3em;
+}
+
+.gallery {
+  display: flex;
+  overflow-x: auto;
+  gap: 1em;
+  padding: 1em 0;
+  scroll-behavior: smooth;
+}
+
+.gallery img {
+  height: 150px;
+  border-radius: 1em;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
