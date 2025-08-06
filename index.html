@@ -2,86 +2,144 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Justas Daukšas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Justas Daukšas portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Icon -->
+                    <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <!-- Android -->  <link rel="icon" href="favicon.png" type="image/png">
+  <!-- Android -->  <meta name="theme-color" content="#004080">
+  <!-- Apple -->    <link rel="apple-touch-icon" href="favicon.png">
+   
 </head>
 <body>
-  <div class="lang-switch">
-    <button onclick="switchLanguage()">
-      <span id="lang-btn">LT</span>
-    </button>
-  </div>
+  <!-- Borders -->
+  <div class="screen-border-left"></div>
+  <div class="screen-border-bottom"></div>
+  <div class="site-wrapper">
+  <!-- Fixed-width middle column for everything -->
+  <div class="site-column">
 
-  <div class="container">
-    <header>
-      <h1 data-en="Justas Daukšas" data-lt="Justas Daukšas">Justas Daukšas</h1>
-      <p data-en="Welcome to my portfolio website." data-lt="Sveiki atvykę į mano portfolio svetainę.">Welcome to my portfolio website.</p>
+    <!-- Header with logo (non-blue background) -->
+    <header class="site-header">
+      <div class="logo-title" onclick="bounceDot()">
+        <h1 class="text-logo">Justas Dauk<span class="letter-s">s<span class="dot">•</span></span>as
+        </h1>
+      </div>
+
+      <!-- Navigation tabs -->
+      <nav class="tab-nav">
+        <button class="tab active" data-tab="about">About me  </button>
+        <button class="tab" data-tab="portfolio">   Portfolio </button>
+        <button class="tab" data-tab="contact">     Contact   </button>
+      </nav>
     </header>
 
-    <main>
-      <section>
-        <h2 data-en="Projects" data-lt="Projektai">Projects</h2>
-        <p data-en="My work." data-lt="Mano darbai.">My work.</p>
-      </section>
+    <!-- Blue box area begins here -->
+    <div class="blue-box-area">
+      <main>
+        <!-- About -->
+        <section id="about" class="tab-content">
+          <h2>About Me</h2>
+          <p>Short description or biography...</p>
+        </section>
+        <!-- Portfolio -->
+        <section id="portfolio" class="tab-content">
+          <h2 data-en="Projects" data-lt="Projektai">Projects</h2>
+          <p data-en="My work." data-lt="Mano darbai.">My work.
+            asdf asdf asdf asdf asdf asdf asdf a<br>sdf asdf <br>asdf asdf asd<br>f asdf asdf
+            asdf a<br>sdf a<br>sdf a<br>s<br>df <br>asdf asdf <br>asdf asdf as<br>df
+            asd<br>f asdf<br> asd<br>f asdf asdf asdf<br> asdf asd<br>f as<br>df <br>asdf asdf asdf asdf
+            asdf a<br>sdf <br>asdf<br> asdf a<br>df asdf<br> as<br>df asdf asdf
+<br>asdf asdf asdf asdf asdf asdf asdf a<br>sdf asdf <br>asdf asdf asd<br>f asdf asdf
+            asdf a<br>sdf a<br>sdf a<br>s<br>df <br>asdf asdf <br>asdf asdf as<br>df
+            asd<br>f asdf<br> asd<br>f asdf asdf asdf<br> asdf asd<br>f as<br>df <br>asdf asdf asdf asdf
+            asdf a<br>sdf <br>asdf<br> asdf a<br>df asdf<br> as<br>df asdf asdf
+<br>
 
-      <!-- Scrollable galleries -->
-      <div class="gallery-container">
-        <h3 data-en="3D" data-lt="3D">Gallery 1</h3>
-        <div class="gallery" id="gallery1">
-		  <img src="images/Asset 2.png" alt="Image 1" title=""CMYK"">
-		  <img src="images/Asset 3.png" alt="Image 2" title=""CMYK"">
-		  <img src="images/Asset 4.png" alt="Image 3" title=""CMYK"">
-		  <img src="images/Asset 5.png" alt="Image 4" title=""CMYK"">
-		  <img src="images/Asset 6.png" alt="Image 5" title=""CMYK"">
-		  <img src="images/Asset 7.png" alt="Image 6" title=""CMYK"">
-		  <img src="images/Asset 8.png" alt="Image 7" title=""CMYK"">
-		  
+<br>
+            asdf asdf <br>asdf asd<br>f as<br>df <br>asdf a<br>sdf asd<br>f asdf asdf asdf asdf asdf
+            asd<br>f asdf<br> asdf asdf<br> asdf asdf a<br>sdf as<br>df asdf asdf asd<br>f asdf asdf
+<br>
+            asdf asdf<br> asdf asd<br>f asdf a<br>sdf asdfasdf asdf asdf asdf asdf asdf asdf a<br>sdf asdf <br>asdf asdf asd<br>f asdf asdf
+            asdf a<br>sdf a<br>sdf a<br>s<br>df <br>asdf asdf <br>asdf asdf as<br>df
+            asd<br>f asdf<br> asd<br>f asdf asdf asdf<br> asdf asd<br>f as<br>df <br>asdf asdf asdf asdf
+            asdf a<br>sdf <br>asdf<br> asdf a<br>df asdf<br> as<br>df asdf asdf
+<br>
 
-        </div>
+<br>
+            asdf asdf <br>asdf asd<br>f as<br>df <br>asdf a<br>sdf asd<br>f asdf asdf asdf asdf asdf
+            asd<br>f asdf<br> asdf asdf<br> asdf asdf a<br>sdf as<br>df asdf asdf asd<br>f asdf asdf
+<br>
+            asdf asdf<br> asdf asd<br>f asdf a<br>sdf asdfasdf asdf asdf asdf asdf asdf asdf a<br>sdf asdf <br>asdf asdf asd<br>f asdf asdf
+            asdf a<br>sdf a<br>sdf a<br>s<br>df <br>asdf asdf <br>asdf asdf as<br>df
+            asd<br>f asdf<br> asd<br>f asdf asdf asdf<br> asdf asd<br>f as<br>df <br>asdf asdf asdf asdf
+            asdf a<br>sdf <br>asdf<br> asdf a<br>df asdf<br> as<br>df asdf asdf
+<br>
 
-        <h3 data-en="Graphic" data-lt="Grafika">Gallery 2</h3>
-        <div class="gallery" id="gallery2">
-          <img src="https://via.placeholder.com/200" alt="Image A" title="Tooltip A">
-          <img src="https://via.placeholder.com/200" alt="Image B" title="Tooltip B">
-          <img src="https://via.placeholder.com/200" alt="Image C" title="Tooltip C">
-        </div>
+<br>
+            asdf asdf <br>asdf asd<br>f as<br>df <br>asdf a<br>sdf asd<br>f asdf asdf asdf asdf asdf
+            asd<br>f asdf<br> asdf asdf<br> asdf asdf a<br>sdf as<br>df asdf asdf asd<br>f asdf asdf
+<br>
+            asdf asdf<br> asdf asd<br>f asdf a<br>sdf asdf
 
-        <h3 data-en="Gallery 3" data-lt="Galerija 3">Gallery 3</h3>
-        <div class="gallery" id="gallery3">
-          <img src="https://via.placeholder.com/200" alt="Image X" title="Tooltip X">
-          <img src="https://via.placeholder.com/200" alt="Image Y" title="Tooltip Y">
-          <img src="https://via.placeholder.com/200" alt="Image Z" title="Tooltip Z">
-        </div>
-      </div>
-    </main>
-  </div>
+<br>
+            asdf asdf <br>asdf asd<br>f as<br>df <br>asdf a<br>sdf asd<br>f asdf asdf asdf asdf asdf
+            asd<br>f asdf<br> asdf asdf<br> asdf asdf a<br>sdf as<br>df asdf asdf asd<br>f asdf asdf
+<br>
+            asdf asdf<br> asdf asd<br>f asdf a<br>sdf asdf asd<br>f asdf asd<br>f asdf asdf
+          </p>
+        </section>
+        <!-- Contact -->
+        <section id="contact" class="tab-content">
+          <p>Contact info coming soon.</p>
+        </section>
+      </main>
 
-  <script>
-    // Language switching
-    let currentLang = 'en';
-    function switchLanguage() {
-      currentLang = currentLang === 'en' ? 'lt' : 'en';
-      document.querySelectorAll('[data-en]').forEach(el => {
-        el.textContent = el.dataset[currentLang];
-      });
-      document.getElementById('lang-btn').textContent = currentLang === 'en' ? 'LT' : 'EN';
-    }
+    </div> <!-- end .blue-box-area -->
 
-    // Blur effect on scroll
-    document.querySelectorAll('.gallery').forEach(gallery => {
-      let lastScrollLeft = 0;
-      gallery.addEventListener('scroll', () => {
-        const scrollLeft = gallery.scrollLeft;
-        const delta = Math.abs(scrollLeft - lastScrollLeft);
-        const blurAmount = Math.min(delta / 10, 10);
-        gallery.style.filter = `blur(${blurAmount}px)`;
-        clearTimeout(gallery._blurTimeout);
-        gallery._blurTimeout = setTimeout(() => {
-          gallery.style.filter = 'blur(0px)';
-        }, 150);
-        lastScrollLeft = scrollLeft;
-      });
+  </div> <!-- end .site-column -->
+</div> <!-- end .site-wrapper -->
+<script>
+  const tabs = document.querySelectorAll('.tab');
+  const sections = document.querySelectorAll('.tab-content');
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const selectedTab = tab.getAttribute('data-tab');
+
+      // Remove active class from all tabs and sections
+      tabs.forEach(t => t.classList.remove('active'));
+      sections.forEach(section => section.classList.remove('active'));
+
+      // Add active class to clicked tab and related section
+      tab.classList.add('active');
+      document.getElementById(selectedTab).classList.add('active');
     });
-  </script>
+  });
+
+  // Show 'about' by default
+  document.getElementById('about').classList.add('active');
+</script>
+<script>
+  function bounceDot() {
+    const dot = document.querySelector('.dot');
+    dot.classList.remove('bounce');
+    void dot.offsetWidth; // Force reflow
+    dot.classList.add('bounce');
+
+    // Remove bounce after animation ends, then resume float after 3s
+    dot.addEventListener('animationend', function handler(e) {
+      if (e.animationName === 'bounce') {
+        dot.classList.remove('bounce');
+        dot.removeEventListener('animationend', handler);
+        setTimeout(() => {
+          dot.classList.remove('bounce'); // Ensure bounce is removed
+          // No need to re-add float, as it's in the base class
+        }, 3000);
+      }
+    });
+  }
+</script>
 </body>
 </html>
